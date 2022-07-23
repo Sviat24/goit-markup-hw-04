@@ -117,22 +117,7 @@ button {
   color: var(--accent-color);
 }
 
-.contact:hover,
-.contact:focus {
-  color: var(--accent-color);
-}
-
-.contact-footer:hover,
-.contact-footer:focus {
-  color: var(--accent-color);
-}
-
-.contact-map:hover,
-.contact-map:focus {
-  color: var(--accent-color);
-}
-
-.page-header {
+.page-header-portfolio {
   border-bottom: 1px solid #ececec;
 }
 
@@ -170,16 +155,6 @@ button {
   color: var(--accent-color);
 }
 
-.contact-container {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.contact-container .contact-item + .contact-item {
-  margin-left: 50px;
-}
-
 /* /header */ /* /header */ /* /header */ /* /header */ /* /header */
 
 /* Description */ /* Description */ /* Description */ /* Description */
@@ -215,6 +190,11 @@ button {
 }
 
 .description {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
   padding: 200px 0;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -324,11 +304,44 @@ button {
 /* contact */ /* contact */ /* contact */ /* contact */ /* contact */
 
 .contact {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text);
+}
+
+.contact-container {
+  display: flex;
+  margin-left: auto;
+}
+
+.icon-contact {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact-item + .contact-item {
+  margin-left: 50px;
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--accent-color);
+}
+
+.contact-map:hover,
+.contact-map:focus {
+  color: var(--accent-color);
 }
 
 /* contact */ /* contact */ /* contact */ /* contact */ /* contact */
