@@ -9,6 +9,7 @@ font-family: 'Roboto', sans-serif; */
   --accent-color: #2196f3;
   --secondary-text-white: #ffffff;
   --hover-color-btm: #188ce8;
+  --secondory-background-color: #f5f4fa;
 }
 
 body {
@@ -174,6 +175,17 @@ button {
   margin-bottom: 10px;
 }
 
+.des-icon {
+  background-color: var(--secondory-background-color);
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
 .description-header {
   width: 696px;
   margin-left: auto;
