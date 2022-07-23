@@ -440,6 +440,8 @@ button {
 }
 
 .logo-style-footer {
+  display: block;
+  padding: 0;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 26px;
@@ -469,6 +471,50 @@ button {
 }
 .contact-item-footer:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-block {
+  display: flex;
+  align-items: baseline;
+}
+
+.fsocial-footer {
+  margin-left: 70px;
+}
+
+.fsocial-titel {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-white);
+}
+
+.fsocial-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.fsocial-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.fsocial-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 /* footer */ /* footer */ /* footer */ /* footer */ /* footer */ /* footer */
 
