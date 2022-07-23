@@ -9,6 +9,7 @@ font-family: 'Roboto', sans-serif; */
   --accent-color: #2196f3;
   --secondary-text-white: #ffffff;
   --hover-color-btm: #188ce8;
+  --primary-background-color: #ffffff;
   --secondory-background-color: #f5f4fa;
 }
 
@@ -297,11 +298,42 @@ button {
   color: var(--secondary-text);
 }
 
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-background-color);
+}
+
+.team-icon {
+  fill: #afb1b8;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background: var(--accent-color);
+}
+
+.team-social-link:hover .team-icon,
+.team-social-link:focus .team-icon {
+  fill: var(--primary-background-color);
+}
+
+.team-social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .team-job {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 .team-boarder {
   border: 1px solid #ffffff;
