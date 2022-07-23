@@ -11,6 +11,7 @@ font-family: 'Roboto', sans-serif; */
   --hover-color-btm: #188ce8;
   --primary-background-color: #ffffff;
   --secondory-background-color: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -310,7 +311,7 @@ button {
 }
 
 .team-icon {
-  fill: #afb1b8;
+  fill: var(--icon-color);
 }
 
 .team-social-link:hover,
@@ -345,6 +346,41 @@ button {
 }
 
 /* Team */ /* Team */ /* Team */ /* Team */ /* Team */ /* Team */ /* Team */
+
+/* Client */ /* Client */ /* Client */ /* Client */ /* Client */ /* Client */
+.client {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-logo {
+  fill: var(--icon-color);
+}
+
+.client-list:hover .client-logo,
+.client-list:focus .client-logo {
+  fill: var(--accent-color);
+}
+
+.client-list:hover,
+.client-list:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+/* Client */ /* Client */ /* Client */ /* Client */ /* Client */ /* Client */
 
 /* contact */ /* contact */ /* contact */ /* contact */ /* contact */
 
