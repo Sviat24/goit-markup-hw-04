@@ -500,7 +500,7 @@ button {
 }
 
 .fsocial-item {
-  display: flex;
+  display: inline-block;
   flex-wrap: wrap;
   width: 44px;
   height: 44px;
@@ -522,8 +522,13 @@ button {
 /* footer */ /* footer */ /* footer */ /* footer */ /* footer */ /* footer */
 
 /* PORTFOLIO */ /* PORTFOLIO */ /* PORTFOLIO */ /* PORTFOLIO */ /* PORTFOLIO */ /* PORTFOLIO */
+
 .style-btm-filter:hover,
 .style-btm-filter:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: none;
   background-color: var(--accent-color);
   color: var(--secondary-text-white);
 }
@@ -533,8 +538,6 @@ button {
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
   border: 1px solid #f5f4fa;
-  border-radius: 4px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
