@@ -483,12 +483,12 @@ button {
 }
 
 .fsocial-titel {
-  font-weight: 700;
+  margin-bottom: 20px;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
-  color: var(--secondary-text-white);
+  font-style: normal;
+  color: var(--secondory-background-color);
 }
 
 .fsocial-list {
@@ -505,6 +505,7 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .fsocial-link {
@@ -515,7 +516,9 @@ button {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  fill: var(--secondory-background-color);
 }
+
 /* footer */ /* footer */ /* footer */ /* footer */ /* footer */ /* footer */
 
 /* PORTFOLIO */ /* PORTFOLIO */ /* PORTFOLIO */ /* PORTFOLIO */ /* PORTFOLIO */ /* PORTFOLIO */
