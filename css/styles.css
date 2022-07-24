@@ -53,6 +53,7 @@ img {
 
 button {
   cursor: pointer;
+  border: 0;
 }
 
 .visually-hidden {
