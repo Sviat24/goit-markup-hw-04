@@ -483,6 +483,8 @@ button {
 }
 
 .fsocial-titel {
+  display: block;
+  font-weight: 700;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
@@ -499,24 +501,21 @@ button {
   gap: 10px;
 }
 
-.fsocial-item {
-  display: inline-block;
+.fsocial-link {
+  display: flex;
+  align-content: center;
+  justify-content: center;
   flex-wrap: wrap;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  fill: var(--secondory-background-color);
 }
 
-.fsocial-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  fill: var(--secondory-background-color);
+.fsocial-link:hover,
+.fsocial-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* footer */ /* footer */ /* footer */ /* footer */ /* footer */ /* footer */
