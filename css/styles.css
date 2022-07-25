@@ -216,6 +216,8 @@ button {
     url(../images/hero/hero.jpg);
   background-size: cover;
   background-color: #c4c4c4;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .style-btm {
@@ -291,7 +293,6 @@ button {
 }
 
 .team-name {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -329,7 +330,10 @@ button {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 30px;
+}
+.team-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-job {
@@ -355,28 +359,33 @@ button {
   gap: 30px;
 }
 
-.client-list {
+.client-link {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  width: 100%;
+  height: 100%;
+}
+
+.client-list {
+  width: 170px;
+  height: 92px;
 }
 
 .client-logo {
   fill: var(--icon-color);
 }
 
-.client-list:hover .client-logo,
-.client-list:focus .client-logo {
+.client-link:hover .client-logo,
+.client-link:focus .client-logo {
   fill: var(--accent-color);
 }
 
-.client-list:hover,
-.client-list:focus {
+.client-link:hover,
+.client-link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -526,7 +535,6 @@ button {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  border: none;
   background-color: var(--accent-color);
   color: var(--secondary-text-white);
 }
@@ -535,7 +543,7 @@ button {
   background: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
-  border: 1px solid #f5f4fa;
+  border: transparent;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -557,6 +565,7 @@ button {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  color: var(--primary-text);
 }
 
 .btm-item {
@@ -575,14 +584,13 @@ button {
 .glr-board {
   border: 1px solid #eeeeee;
   border-top: none;
-  padding: 20px 24px;
+  padding: 20px 20px;
 }
 
-.gallery-list:hover,
-.gallery-list:focus {
+.gallery-link:hover,
+.gallery-link:focus {
   display: block;
   background: #ffffff;
-
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
